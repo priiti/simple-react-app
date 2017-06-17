@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "redux-simple-starter",
   "version": "0.0.0",
+=======
+  "name": "simple-react-app",
+  "version": "1.0.0",
+>>>>>>> fbbecb3673564a7dd4ac1020e36bd6b4f30f010e
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",

@@ -5,6 +5,7 @@ import _ from 'lodash';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import SearchHistory from './components/search_history';
 const API_KEY = 'AIzaSyD88Xj0Rg6uw6f4uyRy_B1pdNN-wHciGBY';
 
 // Create a new component
@@ -19,7 +20,7 @@ class App extends Component {
             selectedVideo: null
         };
 
-        this.videoSearch('surfboards');
+        this.videoSearch('wind');
     }
 
     videoSearch(term) {
@@ -42,6 +43,7 @@ class App extends Component {
                 <VideoList
                     onVideoSelect={selectedVideo => this.setState({selectedVideo})}
                     videos={this.state.videos} />
+                <SearchHistory />
             </div>
         );
     }
